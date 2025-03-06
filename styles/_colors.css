@@ -1,3 +1,11 @@
-:host{
-  --main-blue: blue;
+:root {
+  --color-blue-dark: #072AC8;
+  --color-blue-light: #43D2FF;
+  --color-blue-soft: #A2D6F9;
+  --color-blue-pale: #D1EDFF;
+  --color-navy: #292E47;
+  --color-grey: #6B708D;
+  --color-lavender: #F2F4FC;
+  --color-light-blue: #ECF7FF;
+  --color-yellow: #FFC600;
 }
