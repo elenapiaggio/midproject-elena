@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: var(--Neutral-Medium);
+}
+
+.homepage-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  height: 52px;
+  flex-shrink: 0;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style-type: none;
+  gap: 8em;
+
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--Neutral-Medium);
+}
+
+.menu-first a {
+  color: var(--Primary-Default, #072ac8);
+}
+
+.menu a:hover,
+.menu a:active {
+  color: var(--Primary-Default, #072ac8);
+}
+
+.btn-container {
+  display: flex;
+  width: 200px;
+  padding: 15px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--Primary-Default, #072ac8);
+}
+
+.contact-btn {
+  color: var(--blank, #ffffff);
+  background-color: var(--Primary-Default, #072ac8);
+  text-align: center;
+  /* Web/Headline/Medium */
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  border: none;
+  width: 100%;
+}
