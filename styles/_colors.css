@@ -1,3 +1,15 @@
-:host{
-  --main-blue: blue;
+:root {
+  --color-blue-light: #43d2ff;
+  --color-blue-soft: #a2d6f9;
+  --color-blue-pale: #d1edff;
+  --color-navy: #292e47;
+  --color-grey: #6b708d;
+  --color-lavender: #f2f4fc;
+  --color-light-blue: #ecf7ff;
+  --color-yellow: #ffc600;
+  --Neutral-Light: #f4f6fc;
+
+  --Neutral-Medium: #6b708d;
+  --blank: #ffffff;
+  --Primary-Default: #072ac8;
 }
