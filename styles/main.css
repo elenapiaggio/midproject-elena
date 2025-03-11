@@ -1,2 +1,6 @@
-@import url('styles/_colors.css');
-@import url('styles/_fonts.css');
+@import url("_colors.css");
+@import url("_fonts.css");
+
+body {
+  background-color: var(--Neutral-Light);
+}
