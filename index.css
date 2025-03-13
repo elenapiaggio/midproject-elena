@@ -57,11 +57,24 @@
   background-color: var(--Primary-Default, #072ac8);
 }
 
+.circle-paragraph {
+  margin: 3rem 0;
+  color: var(--Neutral-Medium, #6b708d);
+
+  color: var(--Neutral-Medium, #6b708d);
+
+  /* Body/Regular */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
 .contact-btn {
   color: var(--blank, #ffffff);
   background-color: var(--Primary-Default, #072ac8);
   text-align: center;
-  /* Web/Headline/Medium */
   font-family: Roboto;
   font-size: 17px;
   font-style: normal;
@@ -69,4 +82,107 @@
   line-height: 130%;
   border: none;
   width: 100%;
+}
+
+.hero-section {
+  display: flex;
+  width: 1440px;
+  height: 650px;
+  padding: 0px 170px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1100px;
+  height: 650px;
+  flex-shrink: 0;
+}
+
+.hero-content {
+  min-width: 530px;
+  height: 422px;
+  flex-shrink: 0;
+}
+
+.hero-content h1 {
+  max-width: 530px;
+  font-family: Roboto;
+  color: var(--Neutral-Dark, #292e47);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-content p {
+  max-width: 435px;
+  color: var(--Neutral-Medium, #6b708d);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.hero-buttons {
+  max-width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.hero-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  max-height: 90%;
+  transform: rotate(1.394deg);
+  flex-shrink: 0;
+}
+
+.hero-man {
+  width: 580px;
+  height: 650px;
+  flex-shrink: 0;
+  background-image: url(./project-assets/hero-section/hero-image.png);
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card1 {
+  position: absolute;
+  flex-shrink: 0;
+  left: -80px;
+  top: -50px;
+}
+
+.card1 img {
+  width: 55%;
+}
+
+.card2 {
+  position: absolute;
+  flex-shrink: 0;
+  bottom: -150px;
+  right: -425px;
+}
+
+.card2 img {
+  width: 50%;
 }
