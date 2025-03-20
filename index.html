@@ -7,7 +7,7 @@
   <title>Midterm Jelen Project</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="./styles/main.css">
-  <script src="./index.js"></script>
+
 </head>
 
 <body>
@@ -17,40 +17,43 @@
         <img src="project-assets/logos/circle.svg" alt="Logo Circle">
       </div>
       <ul class="menu">
-        <li class="menu-first"><a href="#">Home</a></li>
+        <li class="menu-first menu-mobile"><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Services</a></li>
+        <!-- Botón SOLO para móvil -->
+        <li class="menu-contact">
+          <a class="contact-btn-mobile" href="#">Contact Us</a>
+        </li>
       </ul>
+      <div class="hamburger">
+        <span class="hamburger-span"></span>
+        <span class="hamburger-span"></span>
+        <span class="hamburger-span"></span>
+      </div>
       <div class="btn-container">
         <button class="contact-btn">Contact Us</button>
       </div>
     </nav>
   </header>
   <section class="hero-section">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div>
-          <h1>Empower Your Business With Stunning Design!</h1>
-          <p class="circle-paragraph">
-            Circle is a digital design and development studio. We design and develop astonishing websites and mobile
-            apps.
-          </p>
-          <div class="hero-buttons">
-            <div class="btn-container">
-              <button class="contact-btn">Get in touch</button>
-            </div>
-            <p>See our work</p>
-          </div>
-        </div>
+    <div class="hero-content">
+      <h1>Empower Your Business With Stunning Design!</h1>
+      <p class="circle-paragraph">
+        Circle is a digital design and development studio. We design and develop astonishing websites and mobile
+        apps.
+      </p>
+      <div class="hero-buttons">
+        <button class="contact-btn">Get in touch</button>
+        <p>See our work</p>
       </div>
-      <div class="hero-image-container">
-        <div class="card1">
-          <img src="./project-assets/hero-section/card-1.png">
-        </div>
-        <div class="hero-man"></div>
-        <div class="card2">
-          <img src="./project-assets/hero-section/card-2.png" alt="Card 2">
-        </div>
+    </div>
+    <div class="hero-image-container">
+      <div class="card1">
+        <img src="./project-assets/hero-section/card-1.png">
+      </div>
+      <img class="hero-man" src="./project-assets/hero-section/hero-image.png">
+      <div class="card2">
+        <img src="./project-assets/hero-section/card-2.png" alt="Card 2">
       </div>
     </div>
   </section>
@@ -97,66 +100,62 @@
     </div>
   </section>
   <section class="testimonial-section">
-    <div class="testimonial-container">
-      <div class="memoji">
-        <div class="memoji-left">
-          <img class="img-memoji" src="./project-assets/testimonial-section/memoji-1.png" alt="memoji1">
-          <img class="img-memoji" src="./project-assets/testimonial-section/memoji-2.png" alt="memoji2">
-        </div>
-        <div class="testimonial-content">
-          <h3>Hear What Our Clients Have to Say</h3>
-          <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
-          <div class="testimonial-client-information">
-            <div class="client-imagen"></div>
-            <div class="client-info">
-              <h5>Kristin Watson</h5>
-              <h6>Booking.com</h6>
-            </div>
-          </div>
-        </div>
-        <div class="memoji-right">
-          <img class="img-memoji" src="./project-assets/testimonial-section/memoji-3.png" alt="memoji3">
-          <img class="img-memoji" src="./project-assets/testimonial-section/memoji-4.png" alt="memoji4">
+
+    <div class="memoji-left">
+      <img class="img-memoji" src="./project-assets/testimonial-section/memoji-1.png" alt="memoji1">
+      <img class="img-memoji" src="./project-assets/testimonial-section/memoji-2.png" alt="memoji2">
+    </div>
+    <div class="testimonial-content">
+      <h3>Hear What Our Clients Have to Say</h3>
+      <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+      <div class="testimonial-client-information">
+        <div class="client-imagen"></div>
+        <div class="client-info">
+          <h5>Kristin Watson</h5>
+          <h6>Booking.com</h6>
         </div>
       </div>
     </div>
-  </section>
-  <section class="services-container">
-    <h3 class="our-service-h3">Our Services</h3>
-    <div class="services-card-container">
-      <article class="service-card">
-        <div class="circle-img">
-          <img src="./project-assets/services-section/icons/1.svg" alt="user interface icon">
-        </div>
-        <h3>User Interface Design</h3>
-        <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-        <p>
-          <a href="./pages/project-detail/projectDetail.html">Learn more</a>
-        </p>
-      </article>
-      <article class="service-card">
-        <div class="circle-img">
-          <img src="./project-assets/services-section/icons/2.svg" alt="user interface icon">
-        </div>
-        <h3>User Interface Design</h3>
-        <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-        <p>
-          <a href="./pages/project-detail/projectDetail.html">Learn more</a>
-        </p>
-      </article>
-      <article class="service-card">
-        <div class="circle-img">
-          <img src="./project-assets/services-section/icons/3.svg" alt="user interface icon">
-        </div>
-
-        <h3>User Interface Design</h3>
-        <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-        <p>
-          <a href="./pages/project-detail/projectDetail.html">Learn more</a>
-        </p>
-      </article>
+    <div class="memoji-right">
+      <img class="img-memoji" src="./project-assets/testimonial-section/memoji-3.png" alt="memoji3">
+      <img class="img-memoji" src="./project-assets/testimonial-section/memoji-4.png" alt="memoji4">
     </div>
+
   </section>
+
+  <div class="services-card-container">
+    <h3 class="our-service-h3">Our Services</h3>
+    <article class="service-card">
+      <div class="circle-img">
+        <img src="./project-assets/services-section/icons/1.svg" alt="user interface icon">
+      </div>
+      <h3>User Interface Design</h3>
+      <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+      <p class="p-right">
+        <a href="./pages/project-detail/projectDetail.html">Learn more</a>
+      </p>
+    </article>
+    <article class="service-card">
+      <div class="circle-img">
+        <img src="./project-assets/services-section/icons/2.svg" alt="user interface icon">
+      </div>
+      <h3>User Interface Design</h3>
+      <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+      <p>
+        <a href="./pages/project-detail/projectDetail.html">Learn more</a>
+      </p>
+    </article>
+    <article class="service-card">
+      <div class="circle-img">
+        <img src="./project-assets/services-section/icons/3.svg" alt="user interface icon">
+      </div>
+      <h3>User Interface Design</h3>
+      <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+      <p>
+        <a href="./pages/project-detail/projectDetail.html">Learn more</a>
+      </p>
+    </article>
+  </div>
   <section class="cta-section-container">
     <div class="cta-content">
       <h3>Do you have any questions?</h3>
@@ -172,30 +171,29 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-left">
-        <img src="project-assets/logos/circle.svg" alt="Logo Circle">
-        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
-      </div>
-      <div class="footer-container-rigth">
-        <div class="frame frame-7">
-          <p>Team</p>
-          <p>Press</p>
-        </div>
-        <div class="frame frame-8">
-          <p>Services</p>
-          <p>Projects</p>
-        </div>
-        <div class="frame frame-9">
-          <p>About Us</p>
-          <p>Privacy Policy</p>
-        </div>
-      </div>
 
+  <footer class="footer-container">
+    <div class="footer-left">
+      <img src="project-assets/logos/circle.svg" alt="Logo Circle">
+      <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+    </div>
+    <div class="footer-container-rigth">
+      <div class="frame frame-7">
+        <p>Team</p>
+        <p>Press</p>
+      </div>
+      <div class="frame frame-8">
+        <p>Services</p>
+        <p>Projects</p>
+      </div>
+      <div class="frame frame-9">
+        <p>About Us</p>
+        <p>Privacy Policy</p>
+      </div>
     </div>
   </footer>
 
+  <script src="./index.js"></script>
 </body>
 
 </html>
