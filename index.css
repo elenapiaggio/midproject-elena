@@ -753,10 +753,10 @@ body {
 
   /** HERO SECTION*/
   .hero-section {
-    width: 100%;
+    width: 95%;
     max-width: 768px;
     max-height: 45vh;
-    min-height: 40vh;
+    min-height: 30vh;
     padding: 0;
     display: flex;
     align-items: center;
@@ -781,6 +781,7 @@ body {
     width: 80%;
     max-width: 85%;
     min-width: 100%;
+    height: auto;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -821,6 +822,216 @@ body {
 
   .btn-container {
     background-color: red;
+  }
+
+  /** Client section */
+  .client-section-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    height: auto;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .client-section-container img {
+    max-width: 80%;
+    margin: 0 auto;
+    filter: none;
+    filter: brightness(80%);
+  }
+
+  /** Recents projects */
+  .project-section-container h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .project-section-container {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    padding: 0 1.5rem;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  .cards-container {
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    width: 100%;
+  }
+
+  .project-card {
+    width: 90%;
+    max-width: 400px;
+    max-height: 250px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .img-class {
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .content-card {
+    text-align: center;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .content-card p {
+    margin-top: 1rem;
+  }
+
+  /** Testimonial section */
+  .testimonial-section {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .testimonial-content {
+    display: flex;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .testimonial-content p {
+    font-size: 1.35rem;
+    max-width: auto;
+    margin: 1.5rem;
+  }
+
+  .testimonial-content > p {
+    padding: 1rem;
+  }
+
+  .memoji {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .memoji-left {
+    display: none;
+  }
+  .memoji-right {
+    display: none;
+  }
+
+  .our-service-h3 {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  .services-card-container {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    margin: 0 auto;
+    padding-top: 2rem;
+  }
+
+  .circle-img {
+    text-align: left;
+  }
+  .p-right {
+    text-align: right;
+  }
+  .service-card {
+    display: flex;
+
+    justify-content: space-between;
+    margin: 0.6rem;
+    width: 95%;
+  }
+
+  .service-card p {
+    width: 90%;
+  }
+
+  .cta-section-container {
+    margin-top: 4rem;
+    width: 100%;
+    max-height: auto;
+    padding-top: 4rem;
+    align-items: flex-start;
+    max-height: 450px;
+  }
+
+  .your-mail {
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cta-content {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    height: 0;
+  }
+
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /** Footer */
+  .footer {
+    width: 100%;
+  }
+
+  .footer-container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+
+  .footer-left {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-left img {
+    width: 100%;
+    margin: 2rem;
+  }
+
+  .frame {
+    gap: 0.5rem;
+  }
+
+  .footer-container-rigth {
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    gap: 0;
   }
 }
 
