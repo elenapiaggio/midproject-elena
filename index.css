@@ -1171,12 +1171,52 @@ body {
     font-size: 1.3rem;
   }
 
-  .memoji-left,
-  .memoji-right {
-  }
-
   .img-memoji {
     max-width: 100px;
     max-height: 100px;
+  }
+
+  /** OUR SERVICES */
+  .services-card-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  .services-card-container > h3 {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+
+  .service-card {
+    height: auto;
+    width: 60%;
+    margin: 1rem;
+    gap: 2rem;
+  }
+
+  .service-card p {
+    width: auto;
+  }
+
+  /** ANY QUESTIONS SECTION */
+  .cta-section-container {
+    width: auto;
+    max-height: 400px;
+  }
+
+  /** FOOTER */
+  .footer-container {
+    margin: 4rem 2rem;
+    width: auto;
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+
+  .footer-container-rigth {
+    gap: 3rem;
   }
 }
