@@ -820,10 +820,6 @@ body {
     padding: 0.5rem 0;
   }
 
-  .btn-container {
-    background-color: red;
-  }
-
   /** Client section */
   .client-section-container {
     display: grid;
@@ -1032,6 +1028,7 @@ body {
     justify-content: space-evenly;
     margin: 2rem 0;
     gap: 0;
+    max-width: 100%;
   }
 }
 
@@ -1218,5 +1215,188 @@ body {
 
   .footer-container-rigth {
     gap: 3rem;
+  }
+}
+
+@media (min-width: 1023px) {
+  /** NAVBAR **/
+  .homepage-navbar {
+    margin-top: 2rem;
+    max-width: 80%;
+  }
+  /** Hero section */
+  .hero-section {
+    width: auto;
+    max-width: 1100px;
+    height: auto;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 0;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .hero-man {
+    width: auto;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    min-width: 48%;
+    max-height: auto;
+    margin: 0 auto;
+  }
+
+  .hero-buttons {
+    max-width: none;
+  }
+
+  .hero-content h1 {
+    width: auto;
+    max-width: 100%;
+  }
+  .hero-content p {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .hero-image-container {
+    width: 100%;
+  }
+
+  .card1 {
+    position: absolute;
+    flex-shrink: 0;
+    left: 70px;
+    top: -40px;
+  }
+
+  .card1 img {
+    max-width: 45%;
+  }
+
+  .card2 {
+    position: absolute;
+    flex-shrink: 0;
+    bottom: -150px;
+    right: -225px;
+  }
+
+  .card2 img {
+    max-width: 45%;
+  }
+
+  .btn-blue {
+    display: flex;
+    width: 200px;
+    padding: 15px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--Primary-Default, #072ac8);
+  }
+
+  /** CLIENT SECTION */
+  .client-section-container {
+    max-width: 80%;
+    justify-content: space-between;
+  }
+
+  /** OUR SERVICES */
+  .services-card-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    height: auto;
+    margin-top: 8rem;
+  }
+
+  .services-card-container > h3 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .service-card {
+    flex: 0 0 auto;
+    width: 340px;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .cards-container {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  /** RECENT PROJECTS */
+  .project-section-container {
+    max-width: 80%;
+    height: auto;
+    flex-shrink: 0;
+    margin: 0 auto;
+  }
+
+  /** SERVICES */
+  .testimonial-section {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+
+    justify-content: space-around;
+    align-items: normal;
+
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .testimonial-content {
+    max-width: 621px;
+    flex-shrink: 0;
+    margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: auto;
+
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    gap: 4rem;
+  }
+
+  .memoji-left,
+  .memoji-right {
+    margin: 2rem 0;
+  }
+
+  .testimonial-content h3,
+  .testimonial-content p {
+    margin: 0;
+  }
+
+  /** QUESTIONS */
+  .cta-section-container {
+    width: auto;
+  }
+
+  /** FOOTER **/
+  .footer-container {
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 80%;
   }
 }
