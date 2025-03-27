@@ -17,12 +17,12 @@
         <img src="project-assets/logos/circle.svg" alt="Logo Circle">
       </div>
       <ul class="menu">
-        <li class="menu-first menu-mobile"><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Services</a></li>
+        <li class="menu-first menu-mobile"><a href="/index.html">Home</a></li>
+        <li><a href="#project-section-container">Projects</a></li>
+        <li><a href="#services-card-container">Services</a></li>
         <!-- Botón SOLO para móvil -->
         <li class="menu-contact">
-          <a class="contact-btn-mobile" href="#">Contact Us</a>
+          <a class="contact-btn-mobile" href="/pages/contact/contact.html">Contact Us</a>
         </li>
       </ul>
       <div class="hamburger">
@@ -31,7 +31,7 @@
         <span class="hamburger-span"></span>
       </div>
       <div class="btn-container">
-        <button class="contact-btn">Contact Us</button>
+        <button class="contact-btn" onclick="window.location.href='/pages/contact/contact.html';">Contact Us</button>
       </div>
     </nav>
   </header>
@@ -64,7 +64,7 @@
     <img src="./project-assets/logos/fedex-logo.svg" alt="fedex-logo">
     <img src="./project-assets/logos/amazon-logo.svg" alt="amazon-logo">
   </section>
-  <section class="project-section-container">
+  <section id="project-section-container" class="project-section-container">
     <h3>Recent Projects</h3>
     <div class="cards-container">
       <article class="project-card ">
@@ -120,7 +120,7 @@
       <img class="img-memoji" src="./project-assets/testimonial-section/memoji-4.png" alt="memoji4">
     </div>
   </section>
-  <div class="services-card-container">
+  <div id="services-card-container" class="services-card-container">
     <h3 class="our-service-h3">Our Services</h3>
     <article class="service-card">
       <div class="circle-img">
