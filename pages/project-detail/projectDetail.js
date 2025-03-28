@@ -2,7 +2,10 @@ window.onload = function () {
   const params = new URLSearchParams(window.location.search);
   const uuid = params.get("uuid");
 
-  getProject(uuid).then(project => {
+  const defaultUuid = "4";
+  const finalUuid = uuid || defaultUuid;
+
+  getProject(finalUuid).then(project => {
     if (!project) {
       alert("Proyecto no encontrado.");
       return;
