@@ -1,27 +1,32 @@
-async function getProject(uuid) {
-  let foundProject = null;
+window.onload = function () {
+  const params = new URLSearchParams(window.location.search);
+  const uuid = params.get("uuid");
 
+  getProject(uuid).then(project => {
+    if (!project) {
+      alert("Proyecto no encontrado.");
+      return;
+    }
+
+    document.getElementById("title-project").textContent = project.name;
+    document.querySelector(".simplify-description").textContent = project.description;
+    document.querySelector(".date").textContent = project.completed_on;
+    document.querySelector(".project-img-main").src = project.image;
+    document.querySelector(".project-img-main").alt = project.name;
+
+    document.querySelector(".simplify-content").innerHTML = `<p>${project.content}</p>`;
+  });
+};
+
+async function getProject(uuid) {
   const api = "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects";
 
-  await fetch(api)
-    .then(data => data.json())
-    .then(projects => {
-
-      projects.forEach(project => {
-        if (project.uuid === uuid.toString()) {
-          console.log("encontré: ", project)
-          foundProject = project
-        }
-      });
-
-    })
-  return foundProject;
+  try {
+    const response = await fetch(api);
+    const projects = await response.json();
+    return projects.find(project => project.uuid === uuid);
+  } catch (error) {
+    console.error("Error al obtener el proyecto:", error);
+    return null;
+  }
 }
-
-
-getProject(2).then(project => {
-
-  const uuid = project.uuid;
-  console.log("Resultado:", uuid);
-  c
-});
